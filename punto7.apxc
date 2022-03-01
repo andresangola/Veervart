@@ -1,0 +1,58 @@
+public class trabajoveevart
+{
+ static integer jugador=0; //punto inicial de jugador
+   
+ do {  
+ integer dado = Integer.valueof((Math.random() * 6));
+
+System.debug('Numero que has sacado en el dado es ' +  dado);
+
+ jugador = jugador + dado;
+system.debug('Esta es la posicon' + jugador);
+
+switch on jugador {
+   when 14 {
+       System.debug('su posicion es 4');
+       jugador=4;
+   }
+   when 19 {
+       System.debug('su posicion es 8');
+       jugador=8;
+   }
+    when 22 {
+       System.debug('su posicion es 20');
+        jugador =20;
+   }
+    when 24 {
+       System.debug('su posicion es 16');
+        jugador =16;
+   }
+    when 10 {
+       System.debug('su posicion es 12');
+        jugador =12;
+   }
+    when 9 {
+       System.debug('su posicion es 18');
+        jugador =18;
+   }
+    when 3 {
+       System.debug('su posicion es 11');
+        jugador =11;
+   }
+    when 6 {
+       System.debug('su posicion es 17');
+        jugador=17;
+   }
+}
+    if (jugador == 25){
+       
+        system.debug('GANASTE');
+    }if (jugador > 25){
+        jugador=jugador-dado;
+    }
+   
+}
+
+while (jugador <25);
+   
+}
